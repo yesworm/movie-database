@@ -5,40 +5,78 @@
   box-sizing: border-box;
 }
 
-body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  color: #333;
-}
-
 .app {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
 }
 
 .app-header {
-  background-color: #f4f4f4;
-  padding: 1rem;
   text-align: center;
+  margin-bottom: 20px;
 }
 
-.app-main {
-  flex-grow: 1;
-  padding: 2rem;
+form {
   display: flex;
-  flex-direction: column;
-  gap: 2rem;
+  justify-content: center;
+  margin-bottom: 20px;
 }
 
-.chart-area, .controls-area {
-  background-color: #fff;
-  padding: 1rem;
+input {
+  padding: 10px;
+  font-size: 16px;
+  width: 200px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #00c030;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:disabled {
+  background-color: #cccccc;
+}
+
+.error {
+  color: red;
+  font-weight: bold;
+}
+
+.diary-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.diary-item {
+  display: flex;
   border: 1px solid #ddd;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 5px;
 }
 
-.app-footer {
-  background-color: #f4f4f4;
-  padding: 1rem;
-  text-align: center;
+.movie-poster {
+  width: 100px;
+  height: auto;
+  margin-right: 15px;
+}
+
+.diary-content {
+  flex: 1;
+}
+
+.stats, .chart {
+  background-color: #f0f0f0;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.chart {
+  height: 350px;
 }
